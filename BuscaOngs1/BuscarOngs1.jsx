@@ -1,11 +1,11 @@
 import CardsOngs from "../CardsOngs/CardsOngs.jsx";
 import css from './BuscarOngs1.module.css'
+import CardRecomendacoes from "../CardRecomedacoes/CardRecomendacoes.jsx";
 
 export default function BuscarOngs1() {
     return(
-        <>
-            <div>
-                <div className={css.secao}>
+            <div className={(css.secao) + " " + (css.recomendacoes)} >
+                <div className={css.postagens}>
                     <CardsOngs
                         nome={"Grupa"}
                         subtitulo={"Grupo Unido Pelos Animais"}
@@ -18,8 +18,6 @@ export default function BuscarOngs1() {
                         imagem={"/public/image 4.png"}
                         tipo={"Animal"}
                     />
-                </div>
-                <div className={css.secao}>
                     <CardsOngs
                         nome={"Gerando Falcões"}
                         subtitulo={"Ecossistema de Desenvolvimento nas Favelas"}
@@ -33,12 +31,21 @@ export default function BuscarOngs1() {
                         tipo={"Educação"}
                     />
                 </div>
+
+                <div className={css.recomendacoes} >
+                    <CardRecomendacoes
+                        imagem={"/public/images 5.png"}
+                        nome={"Rede de Mentoria de Carreira"}
+                        subtitulo={"Gerando Falcões"}
+                    />
+                    <CardRecomendacoes
+                        imagem={"/public/image 4.png"}
+                        nome={"Mutirão de Castração Solidária"}
+                        subtitulo={"GRUPA"}
+                    />
+
+                </div>
             </div>
 
-            <div>
-
-            </div>
-
-        </>
     )
 }

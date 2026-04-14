@@ -2,6 +2,16 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 5rem;
+
+}
+
+.postagens{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+
+}
+.recomendacoes{
+    gap: 6.5rem;
 }
